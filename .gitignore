@@ -1,0 +1,117 @@
+# VERA — .gitignore
+# This repository is documentation-only.
+# The following patterns ensure no implementation artifacts are accidentally committed.
+
+# ─── Operating System Artifacts ───────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ─── Editor & IDE Metadata ────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ─── Implementation Safeguards ────────────────────────────────────────────────
+# Ensure no code, configs, or data files are committed to this documentation repo
+
+# Python
+*.py
+*.pyc
+*.pyo
+__pycache__/
+*.egg-info/
+dist/
+build/
+*.whl
+.venv/
+venv/
+env/
+
+# JavaScript / Node
+node_modules/
+*.js
+*.ts
+*.jsx
+*.tsx
+package.json
+package-lock.json
+yarn.lock
+
+# Jupyter Notebooks (contain executable code)
+*.ipynb
+
+# Configuration & Secrets
+*.env
+.env.*
+*.key
+*.pem
+*.secret
+secrets/
+config/
+credentials/
+
+# Data Files
+*.csv
+*.json
+*.jsonl
+*.parquet
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.sqlite
+*.db
+data/
+datasets/
+raw/
+processed/
+
+# Model Artifacts
+*.pt
+*.pth
+*.onnx
+*.bin
+*.safetensors
+models/
+checkpoints/
+weights/
+
+# Logs & Telemetry
+*.log
+logs/
+*.trace
+
+# Build & Temporary Files
+*.tmp
+*.temp
+tmp/
+temp/
+.cache/
+output/
+results/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ─── Documentation Build Artifacts ────────────────────────────────────────────
+# Allow source .md files but ignore generated site builds
+_site/
+site/
+.jekyll-cache/
+.jekyll-metadata
+public/build/

@@ -1,0 +1,8 @@
+﻿cff-version: 1.2.0
+title: VERA Neural Intelligence — Behavioral Reasoning Architecture
+authors:
+  - family-names: Leka
+    given-names: Eva
+year: 2026
+doi: 10.5281/zenodo.19026982
+url: https://github.com/VeraNeural/vera-behavioral-reasoning-architecture
